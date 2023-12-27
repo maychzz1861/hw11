@@ -1,3 +1,6 @@
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+
 function Counter({ item: { id, number }, hdlUpdate, hdlRemove }) {
   return (
     <div className='counter'>
@@ -61,6 +64,3 @@ function App() {
     </>
   );
 }
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
